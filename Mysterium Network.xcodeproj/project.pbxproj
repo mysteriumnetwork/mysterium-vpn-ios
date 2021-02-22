@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7949D2B825E3E14400FA2243 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AC28FB25DD58CB008A87B7 /* NetworkExtension.framework */; };
+		7949D2CA25E3E66900FA2243 /* test.ovpn in Resources */ = {isa = PBXBuildFile; fileRef = 7949D2C925E3E66900FA2243 /* test.ovpn */; };
+		79AC28D225DD4981008A87B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC28D125DD4981008A87B7 /* AppDelegate.swift */; };
+		79AC28D625DD4981008A87B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC28D525DD4981008A87B7 /* ViewController.swift */; };
+		79AC28D925DD4981008A87B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AC28D725DD4981008A87B7 /* Main.storyboard */; };
+		79AC28DB25DD4983008A87B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79AC28DA25DD4983008A87B7 /* Assets.xcassets */; };
+		79AC28DE25DD4983008A87B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AC28DC25DD4983008A87B7 /* LaunchScreen.storyboard */; };
+		79AC28FC25DD58CB008A87B7 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AC28FB25DD58CB008A87B7 /* NetworkExtension.framework */; };
+		79AC28FF25DD58CB008A87B7 /* AppProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC28FE25DD58CB008A87B7 /* AppProxyProvider.swift */; };
+		79AC290425DD58CB008A87B7 /* Mysterium Network Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 79AC28F925DD58CB008A87B7 /* Mysterium Network Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8DDBC08FF8F4A1D035D14F0 /* Pods_Mysterium_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8BC7FDABE1A7256EC60598A /* Pods_Mysterium_Network.framework */; };
+		F709CC4160A78819117952C0 /* Pods_Mysterium_Network_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04500FE69B7ECB8689C0E9A /* Pods_Mysterium_Network_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79AC290225DD58CB008A87B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79AC28C625DD4981008A87B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79AC28F825DD58CB008A87B7;
+			remoteInfo = "Mysterium Network Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79AC290825DD58CB008A87B7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				79AC290425DD58CB008A87B7 /* Mysterium Network Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7949D2B725E3E14400FA2243 /* Mysterium Network.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mysterium Network.entitlements"; sourceTree = "<group>"; };
+		7949D2C925E3E66900FA2243 /* test.ovpn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.ovpn; sourceTree = "<group>"; };
+		79AC28CE25DD4981008A87B7 /* Mysterium Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mysterium Network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AC28D125DD4981008A87B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79AC28D525DD4981008A87B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79AC28D825DD4981008A87B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79AC28DA25DD4983008A87B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79AC28DD25DD4983008A87B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79AC28DF25DD4983008A87B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79AC28F925DD58CB008A87B7 /* Mysterium Network Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mysterium Network Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AC28FB25DD58CB008A87B7 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		79AC28FE25DD58CB008A87B7 /* AppProxyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProxyProvider.swift; sourceTree = "<group>"; };
+		79AC290025DD58CB008A87B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79AC290125DD58CB008A87B7 /* Mysterium_Network_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mysterium_Network_Extension.entitlements; sourceTree = "<group>"; };
+		91A48F16407DCD5C36786979 /* Pods-Mysterium Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mysterium Network.release.xcconfig"; path = "Target Support Files/Pods-Mysterium Network/Pods-Mysterium Network.release.xcconfig"; sourceTree = "<group>"; };
+		A04500FE69B7ECB8689C0E9A /* Pods_Mysterium_Network_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mysterium_Network_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE24255C43C3AC440351C08 /* Pods-Mysterium Network Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mysterium Network Extension.debug.xcconfig"; path = "Target Support Files/Pods-Mysterium Network Extension/Pods-Mysterium Network Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		B8BC7FDABE1A7256EC60598A /* Pods_Mysterium_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mysterium_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6CA52F215DC2FD04F6BA15 /* Pods-Mysterium Network Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mysterium Network Extension.release.xcconfig"; path = "Target Support Files/Pods-Mysterium Network Extension/Pods-Mysterium Network Extension.release.xcconfig"; sourceTree = "<group>"; };
+		E4C2B5AEDDD5E3A89E5F8839 /* Pods-Mysterium Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mysterium Network.debug.xcconfig"; path = "Target Support Files/Pods-Mysterium Network/Pods-Mysterium Network.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79AC28CB25DD4981008A87B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7949D2B825E3E14400FA2243 /* NetworkExtension.framework in Frameworks */,
+				E8DDBC08FF8F4A1D035D14F0 /* Pods_Mysterium_Network.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79AC28F625DD58CB008A87B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AC28FC25DD58CB008A87B7 /* NetworkExtension.framework in Frameworks */,
+				F709CC4160A78819117952C0 /* Pods_Mysterium_Network_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79AC28C525DD4981008A87B7 = {
+			isa = PBXGroup;
+			children = (
+				79AC28D025DD4981008A87B7 /* Mysterium Network */,
+				79AC28FD25DD58CB008A87B7 /* Mysterium Network Extension */,
+				79AC28FA25DD58CB008A87B7 /* Frameworks */,
+				79AC28CF25DD4981008A87B7 /* Products */,
+				8AA8BB1067AC1D9314840FCB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		79AC28CF25DD4981008A87B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79AC28CE25DD4981008A87B7 /* Mysterium Network.app */,
+				79AC28F925DD58CB008A87B7 /* Mysterium Network Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79AC28D025DD4981008A87B7 /* Mysterium Network */ = {
+			isa = PBXGroup;
+			children = (
+				7949D2C925E3E66900FA2243 /* test.ovpn */,
+				7949D2B725E3E14400FA2243 /* Mysterium Network.entitlements */,
+				79AC28D125DD4981008A87B7 /* AppDelegate.swift */,
+				79AC28D525DD4981008A87B7 /* ViewController.swift */,
+				79AC28D725DD4981008A87B7 /* Main.storyboard */,
+				79AC28DA25DD4983008A87B7 /* Assets.xcassets */,
+				79AC28DC25DD4983008A87B7 /* LaunchScreen.storyboard */,
+				79AC28DF25DD4983008A87B7 /* Info.plist */,
+			);
+			path = "Mysterium Network";
+			sourceTree = "<group>";
+		};
+		79AC28FA25DD58CB008A87B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79AC28FB25DD58CB008A87B7 /* NetworkExtension.framework */,
+				B8BC7FDABE1A7256EC60598A /* Pods_Mysterium_Network.framework */,
+				A04500FE69B7ECB8689C0E9A /* Pods_Mysterium_Network_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79AC28FD25DD58CB008A87B7 /* Mysterium Network Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79AC28FE25DD58CB008A87B7 /* AppProxyProvider.swift */,
+				79AC290025DD58CB008A87B7 /* Info.plist */,
+				79AC290125DD58CB008A87B7 /* Mysterium_Network_Extension.entitlements */,
+			);
+			path = "Mysterium Network Extension";
+			sourceTree = "<group>";
+		};
+		8AA8BB1067AC1D9314840FCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2B5AEDDD5E3A89E5F8839 /* Pods-Mysterium Network.debug.xcconfig */,
+				91A48F16407DCD5C36786979 /* Pods-Mysterium Network.release.xcconfig */,
+				ADE24255C43C3AC440351C08 /* Pods-Mysterium Network Extension.debug.xcconfig */,
+				CB6CA52F215DC2FD04F6BA15 /* Pods-Mysterium Network Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79AC28CD25DD4981008A87B7 /* Mysterium Network */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79AC28E225DD4983008A87B7 /* Build configuration list for PBXNativeTarget "Mysterium Network" */;
+			buildPhases = (
+				89B74250043F24E2F2E1BD3C /* [CP] Check Pods Manifest.lock */,
+				79AC28CA25DD4981008A87B7 /* Sources */,
+				79AC28CB25DD4981008A87B7 /* Frameworks */,
+				79AC28CC25DD4981008A87B7 /* Resources */,
+				79AC290825DD58CB008A87B7 /* Embed App Extensions */,
+				61C0B856829DCAE225C39148 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79AC290325DD58CB008A87B7 /* PBXTargetDependency */,
+			);
+			name = "Mysterium Network";
+			productName = "Mysterium Network";
+			productReference = 79AC28CE25DD4981008A87B7 /* Mysterium Network.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79AC28F825DD58CB008A87B7 /* Mysterium Network Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79AC290525DD58CB008A87B7 /* Build configuration list for PBXNativeTarget "Mysterium Network Extension" */;
+			buildPhases = (
+				4AF9ED2D5B1617F3F9BEC742 /* [CP] Check Pods Manifest.lock */,
+				79AC28F525DD58CB008A87B7 /* Sources */,
+				79AC28F625DD58CB008A87B7 /* Frameworks */,
+				79AC28F725DD58CB008A87B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mysterium Network Extension";
+			productName = "Mysterium Network Extension";
+			productReference = 79AC28F925DD58CB008A87B7 /* Mysterium Network Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79AC28C625DD4981008A87B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					79AC28CD25DD4981008A87B7 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					79AC28F825DD58CB008A87B7 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 79AC28C925DD4981008A87B7 /* Build configuration list for PBXProject "Mysterium Network" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79AC28C525DD4981008A87B7;
+			productRefGroup = 79AC28CF25DD4981008A87B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79AC28CD25DD4981008A87B7 /* Mysterium Network */,
+				79AC28F825DD58CB008A87B7 /* Mysterium Network Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79AC28CC25DD4981008A87B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AC28DE25DD4983008A87B7 /* LaunchScreen.storyboard in Resources */,
+				79AC28DB25DD4983008A87B7 /* Assets.xcassets in Resources */,
+				7949D2CA25E3E66900FA2243 /* test.ovpn in Resources */,
+				79AC28D925DD4981008A87B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79AC28F725DD58CB008A87B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AF9ED2D5B1617F3F9BEC742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mysterium Network Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61C0B856829DCAE225C39148 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mysterium Network/Pods-Mysterium Network-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mysterium Network/Pods-Mysterium Network-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mysterium Network/Pods-Mysterium Network-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89B74250043F24E2F2E1BD3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mysterium Network-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79AC28CA25DD4981008A87B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AC28D625DD4981008A87B7 /* ViewController.swift in Sources */,
+				79AC28D225DD4981008A87B7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79AC28F525DD58CB008A87B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AC28FF25DD58CB008A87B7 /* AppProxyProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79AC290325DD58CB008A87B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79AC28F825DD58CB008A87B7 /* Mysterium Network Extension */;
+			targetProxy = 79AC290225DD58CB008A87B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79AC28D725DD4981008A87B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79AC28D825DD4981008A87B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79AC28DC25DD4983008A87B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79AC28DD25DD4983008A87B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79AC28E025DD4983008A87B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79AC28E125DD4983008A87B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79AC28E325DD4983008A87B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C2B5AEDDD5E3A89E5F8839 /* Pods-Mysterium Network.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mysterium Network/Mysterium Network.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Mysterium Network/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniusee.mysterium.poc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		79AC28E425DD4983008A87B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A48F16407DCD5C36786979 /* Pods-Mysterium Network.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mysterium Network/Mysterium Network.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Mysterium Network/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniusee.mysterium.poc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+		79AC290625DD58CB008A87B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE24255C43C3AC440351C08 /* Pods-Mysterium Network Extension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Mysterium Network Extension/Mysterium_Network_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				INFOPLIST_FILE = "Mysterium Network Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniusee.mysterium.poc.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		79AC290725DD58CB008A87B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6CA52F215DC2FD04F6BA15 /* Pods-Mysterium Network Extension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Mysterium Network Extension/Mysterium_Network_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				INFOPLIST_FILE = "Mysterium Network Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniusee.mysterium.poc.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79AC28C925DD4981008A87B7 /* Build configuration list for PBXProject "Mysterium Network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79AC28E025DD4983008A87B7 /* Debug */,
+				79AC28E125DD4983008A87B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79AC28E225DD4983008A87B7 /* Build configuration list for PBXNativeTarget "Mysterium Network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79AC28E325DD4983008A87B7 /* Debug */,
+				79AC28E425DD4983008A87B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79AC290525DD58CB008A87B7 /* Build configuration list for PBXNativeTarget "Mysterium Network Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79AC290625DD58CB008A87B7 /* Debug */,
+				79AC290725DD58CB008A87B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79AC28C625DD4981008A87B7 /* Project object */;
+}
