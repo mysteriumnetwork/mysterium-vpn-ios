@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7949D2B825E3E14400FA2243 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AC28FB25DD58CB008A87B7 /* NetworkExtension.framework */; };
 		7949D2CA25E3E66900FA2243 /* test.ovpn in Resources */ = {isa = PBXBuildFile; fileRef = 7949D2C925E3E66900FA2243 /* test.ovpn */; };
+		79A68F4C25E543C6000FC973 /* Mysterium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A68F4B25E543C6000FC973 /* Mysterium.framework */; };
+		79A68F5025E543F2000FC973 /* Mysterium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A68F4B25E543C6000FC973 /* Mysterium.framework */; };
 		79AC28D225DD4981008A87B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC28D125DD4981008A87B7 /* AppDelegate.swift */; };
 		79AC28D625DD4981008A87B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC28D525DD4981008A87B7 /* ViewController.swift */; };
 		79AC28D925DD4981008A87B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AC28D725DD4981008A87B7 /* Main.storyboard */; };
@@ -17,8 +19,6 @@
 		79AC28FC25DD58CB008A87B7 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AC28FB25DD58CB008A87B7 /* NetworkExtension.framework */; };
 		79AC28FF25DD58CB008A87B7 /* AppProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC28FE25DD58CB008A87B7 /* AppProxyProvider.swift */; };
 		79AC290425DD58CB008A87B7 /* Mysterium Network Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 79AC28F925DD58CB008A87B7 /* Mysterium Network Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E8DDBC08FF8F4A1D035D14F0 /* Pods_Mysterium_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8BC7FDABE1A7256EC60598A /* Pods_Mysterium_Network.framework */; };
-		F709CC4160A78819117952C0 /* Pods_Mysterium_Network_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04500FE69B7ECB8689C0E9A /* Pods_Mysterium_Network_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,7 @@
 /* Begin PBXFileReference section */
 		7949D2B725E3E14400FA2243 /* Mysterium Network.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mysterium Network.entitlements"; sourceTree = "<group>"; };
 		7949D2C925E3E66900FA2243 /* test.ovpn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.ovpn; sourceTree = "<group>"; };
+		79A68F4B25E543C6000FC973 /* Mysterium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mysterium.framework; sourceTree = "<group>"; };
 		79AC28CE25DD4981008A87B7 /* Mysterium Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mysterium Network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AC28D125DD4981008A87B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79AC28D525DD4981008A87B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,9 +62,7 @@
 		79AC290025DD58CB008A87B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79AC290125DD58CB008A87B7 /* Mysterium_Network_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mysterium_Network_Extension.entitlements; sourceTree = "<group>"; };
 		91A48F16407DCD5C36786979 /* Pods-Mysterium Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mysterium Network.release.xcconfig"; path = "Target Support Files/Pods-Mysterium Network/Pods-Mysterium Network.release.xcconfig"; sourceTree = "<group>"; };
-		A04500FE69B7ECB8689C0E9A /* Pods_Mysterium_Network_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mysterium_Network_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE24255C43C3AC440351C08 /* Pods-Mysterium Network Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mysterium Network Extension.debug.xcconfig"; path = "Target Support Files/Pods-Mysterium Network Extension/Pods-Mysterium Network Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		B8BC7FDABE1A7256EC60598A /* Pods_Mysterium_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mysterium_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6CA52F215DC2FD04F6BA15 /* Pods-Mysterium Network Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mysterium Network Extension.release.xcconfig"; path = "Target Support Files/Pods-Mysterium Network Extension/Pods-Mysterium Network Extension.release.xcconfig"; sourceTree = "<group>"; };
 		E4C2B5AEDDD5E3A89E5F8839 /* Pods-Mysterium Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mysterium Network.debug.xcconfig"; path = "Target Support Files/Pods-Mysterium Network/Pods-Mysterium Network.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7949D2B825E3E14400FA2243 /* NetworkExtension.framework in Frameworks */,
-				E8DDBC08FF8F4A1D035D14F0 /* Pods_Mysterium_Network.framework in Frameworks */,
+				79A68F4C25E543C6000FC973 /* Mysterium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79AC28FC25DD58CB008A87B7 /* NetworkExtension.framework in Frameworks */,
-				F709CC4160A78819117952C0 /* Pods_Mysterium_Network_Extension.framework in Frameworks */,
+				79A68F5025E543F2000FC973 /* Mysterium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,9 +127,8 @@
 		79AC28FA25DD58CB008A87B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79A68F4B25E543C6000FC973 /* Mysterium.framework */,
 				79AC28FB25DD58CB008A87B7 /* NetworkExtension.framework */,
-				B8BC7FDABE1A7256EC60598A /* Pods_Mysterium_Network.framework */,
-				A04500FE69B7ECB8689C0E9A /* Pods_Mysterium_Network_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -418,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -473,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -495,7 +493,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZCCB3UC44;
 				EXCLUDED_ARCHS = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Mysterium Network/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,7 +522,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZCCB3UC44;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Mysterium Network/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +547,10 @@
 				CODE_SIGN_ENTITLEMENTS = "Mysterium Network Extension/Mysterium_Network_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Mysterium Network Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,6 +572,10 @@
 				CODE_SIGN_ENTITLEMENTS = "Mysterium Network Extension/Mysterium_Network_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Mysterium Network Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
