@@ -1,0 +1,8 @@
+framework module "Mysterium" {
+	header "ref.h"
+    header "Mysterium.objc.h"
+    header "Universe.objc.h"
+    header "Mysterium.h"
+
+    export *
+}
