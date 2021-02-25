@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002132F925E85F28002D006B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002132F825E85F28002D006B /* AppDelegate.swift */; };
+		002132FD25E85F28002D006B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002132FC25E85F28002D006B /* ViewController.swift */; };
+		0021330025E85F28002D006B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002132FE25E85F28002D006B /* Main.storyboard */; };
+		0021330225E85F29002D006B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0021330125E85F29002D006B /* Assets.xcassets */; };
+		0021330525E85F29002D006B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0021330325E85F29002D006B /* LaunchScreen.storyboard */; };
+		0021331025E85F36002D006B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0021330F25E85F36002D006B /* NetworkExtension.framework */; };
+		0021331625E85FED002D006B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0021330F25E85F36002D006B /* NetworkExtension.framework */; };
+		0021331925E85FED002D006B /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021331825E85FED002D006B /* PacketTunnelProvider.swift */; };
+		0021331E25E85FED002D006B /* mn-vpn.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0021331525E85FED002D006B /* mn-vpn.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0021333A25E86B5F002D006B /* VPNConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021333925E86B5F002D006B /* VPNConfig.swift */; };
+		0021333F25E86D3E002D006B /* VPNConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021333925E86B5F002D006B /* VPNConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0021331C25E85FED002D006B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002132ED25E85F28002D006B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0021331425E85FED002D006B;
+			remoteInfo = "mn-vpn";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0021332225E85FED002D006B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0021331E25E85FED002D006B /* mn-vpn.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002132F525E85F28002D006B /* mn-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mn-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		002132F825E85F28002D006B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		002132FC25E85F28002D006B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		002132FF25E85F28002D006B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0021330125E85F29002D006B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0021330425E85F29002D006B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0021330625E85F29002D006B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0021330D25E85F36002D006B /* mn-poc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mn-poc.entitlements"; sourceTree = "<group>"; };
+		0021330F25E85F36002D006B /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		0021331525E85FED002D006B /* mn-vpn.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "mn-vpn.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0021331825E85FED002D006B /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		0021331A25E85FED002D006B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0021331B25E85FED002D006B /* mn_vpn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mn_vpn.entitlements; sourceTree = "<group>"; };
+		0021333925E86B5F002D006B /* VPNConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNConfig.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002132F225E85F28002D006B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0021331025E85F36002D006B /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0021331225E85FED002D006B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0021331625E85FED002D006B /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002132EC25E85F28002D006B = {
+			isa = PBXGroup;
+			children = (
+				002132F725E85F28002D006B /* mn-poc */,
+				0021331725E85FED002D006B /* mn-vpn */,
+				002132F625E85F28002D006B /* Products */,
+				0021330E25E85F36002D006B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		002132F625E85F28002D006B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002132F525E85F28002D006B /* mn-poc.app */,
+				0021331525E85FED002D006B /* mn-vpn.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		002132F725E85F28002D006B /* mn-poc */ = {
+			isa = PBXGroup;
+			children = (
+				0021330D25E85F36002D006B /* mn-poc.entitlements */,
+				002132F825E85F28002D006B /* AppDelegate.swift */,
+				002132FC25E85F28002D006B /* ViewController.swift */,
+				0021333925E86B5F002D006B /* VPNConfig.swift */,
+				002132FE25E85F28002D006B /* Main.storyboard */,
+				0021330125E85F29002D006B /* Assets.xcassets */,
+				0021330325E85F29002D006B /* LaunchScreen.storyboard */,
+				0021330625E85F29002D006B /* Info.plist */,
+			);
+			path = "mn-poc";
+			sourceTree = "<group>";
+		};
+		0021330E25E85F36002D006B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0021330F25E85F36002D006B /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0021331725E85FED002D006B /* mn-vpn */ = {
+			isa = PBXGroup;
+			children = (
+				0021331825E85FED002D006B /* PacketTunnelProvider.swift */,
+				0021331A25E85FED002D006B /* Info.plist */,
+				0021331B25E85FED002D006B /* mn_vpn.entitlements */,
+			);
+			path = "mn-vpn";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		002132F425E85F28002D006B /* mn-poc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0021330925E85F29002D006B /* Build configuration list for PBXNativeTarget "mn-poc" */;
+			buildPhases = (
+				002132F125E85F28002D006B /* Sources */,
+				002132F225E85F28002D006B /* Frameworks */,
+				002132F325E85F28002D006B /* Resources */,
+				0021332225E85FED002D006B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0021331D25E85FED002D006B /* PBXTargetDependency */,
+			);
+			name = "mn-poc";
+			productName = "mn-poc";
+			productReference = 002132F525E85F28002D006B /* mn-poc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0021331425E85FED002D006B /* mn-vpn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0021331F25E85FED002D006B /* Build configuration list for PBXNativeTarget "mn-vpn" */;
+			buildPhases = (
+				0021331125E85FED002D006B /* Sources */,
+				0021331225E85FED002D006B /* Frameworks */,
+				0021331325E85FED002D006B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mn-vpn";
+			productName = "mn-vpn";
+			productReference = 0021331525E85FED002D006B /* mn-vpn.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		002132ED25E85F28002D006B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					002132F425E85F28002D006B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0021331425E85FED002D006B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 002132F025E85F28002D006B /* Build configuration list for PBXProject "mn-poc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 002132EC25E85F28002D006B;
+			productRefGroup = 002132F625E85F28002D006B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				002132F425E85F28002D006B /* mn-poc */,
+				0021331425E85FED002D006B /* mn-vpn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		002132F325E85F28002D006B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0021330525E85F29002D006B /* LaunchScreen.storyboard in Resources */,
+				0021330225E85F29002D006B /* Assets.xcassets in Resources */,
+				0021330025E85F28002D006B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0021331325E85FED002D006B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002132F125E85F28002D006B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002132FD25E85F28002D006B /* ViewController.swift in Sources */,
+				0021333A25E86B5F002D006B /* VPNConfig.swift in Sources */,
+				002132F925E85F28002D006B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0021331125E85FED002D006B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0021333F25E86D3E002D006B /* VPNConfig.swift in Sources */,
+				0021331925E85FED002D006B /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0021331D25E85FED002D006B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0021331425E85FED002D006B /* mn-vpn */;
+			targetProxy = 0021331C25E85FED002D006B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		002132FE25E85F28002D006B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002132FF25E85F28002D006B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0021330325E85F29002D006B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0021330425E85F29002D006B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0021330725E85F29002D006B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0021330825E85F29002D006B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0021330A25E85F29002D006B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "mn-poc/mn-poc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				INFOPLIST_FILE = "mn-poc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniusee.mysterium.poc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0021330B25E85F29002D006B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "mn-poc/mn-poc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				INFOPLIST_FILE = "mn-poc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniusee.mysterium.poc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0021332025E85FED002D006B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "mn-vpn/mn_vpn.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				INFOPLIST_FILE = "mn-vpn/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniusee.mysterium.poc.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0021332125E85FED002D006B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "mn-vpn/mn_vpn.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				INFOPLIST_FILE = "mn-vpn/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniusee.mysterium.poc.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		002132F025E85F28002D006B /* Build configuration list for PBXProject "mn-poc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0021330725E85F29002D006B /* Debug */,
+				0021330825E85F29002D006B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0021330925E85F29002D006B /* Build configuration list for PBXNativeTarget "mn-poc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0021330A25E85F29002D006B /* Debug */,
+				0021330B25E85F29002D006B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0021331F25E85FED002D006B /* Build configuration list for PBXNativeTarget "mn-vpn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0021332025E85FED002D006B /* Debug */,
+				0021332125E85FED002D006B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 002132ED25E85F28002D006B /* Project object */;
+}
