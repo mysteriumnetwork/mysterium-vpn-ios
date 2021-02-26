@@ -18,6 +18,8 @@
 		0021331E25E85FED002D006B /* mn-vpn.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0021331525E85FED002D006B /* mn-vpn.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0021333A25E86B5F002D006B /* VPNConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021333925E86B5F002D006B /* VPNConfig.swift */; };
 		0021333F25E86D3E002D006B /* VPNConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021333925E86B5F002D006B /* VPNConfig.swift */; };
+		796D244025E9319400DAE824 /* Mysterium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796D243F25E9319400DAE824 /* Mysterium.framework */; };
+		796D244325E9319E00DAE824 /* Mysterium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796D243F25E9319400DAE824 /* Mysterium.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 		0021331A25E85FED002D006B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0021331B25E85FED002D006B /* mn_vpn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mn_vpn.entitlements; sourceTree = "<group>"; };
 		0021333925E86B5F002D006B /* VPNConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNConfig.swift; sourceTree = "<group>"; };
+		796D243F25E9319400DAE824 /* Mysterium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mysterium.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796D244025E9319400DAE824 /* Mysterium.framework in Frameworks */,
 				0021331025E85F36002D006B /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796D244325E9319E00DAE824 /* Mysterium.framework in Frameworks */,
 				0021331625E85FED002D006B /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +123,7 @@
 		0021330E25E85F36002D006B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				796D243F25E9319400DAE824 /* Mysterium.framework */,
 				0021330F25E85F36002D006B /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
@@ -403,6 +409,10 @@
 				CODE_SIGN_ENTITLEMENTS = "mn-poc/mn-poc.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "mn-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -425,6 +435,10 @@
 				CODE_SIGN_ENTITLEMENTS = "mn-poc/mn-poc.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "mn-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -444,6 +458,10 @@
 				CODE_SIGN_ENTITLEMENTS = "mn-vpn/mn_vpn.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "mn-vpn/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,6 +483,10 @@
 				CODE_SIGN_ENTITLEMENTS = "mn-vpn/mn_vpn.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZCCB3UC44;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "mn-vpn/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

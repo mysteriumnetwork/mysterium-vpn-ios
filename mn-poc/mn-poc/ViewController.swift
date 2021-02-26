@@ -56,7 +56,7 @@ class ViewController: UIViewController {
                 providerProtocol.providerConfiguration = config.raw
                 providerProtocol.serverAddress = config.serverAddress
                 vpnManager.protocolConfiguration = providerProtocol
-                vpnManager.localizedDescription = "Mysterium Network"
+                vpnManager.localizedDescription = "Mysterium Network VPN"
                 vpnManager.isEnabled = true
 
                 vpnManager.saveToPreferences(completionHandler: { (error: Error?) in
