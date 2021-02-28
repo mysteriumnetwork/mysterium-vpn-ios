@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		002132F925E85F28002D006B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002132F825E85F28002D006B /* AppDelegate.swift */; };
-		002132FD25E85F28002D006B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002132FC25E85F28002D006B /* ViewController.swift */; };
+		002132FD25E85F28002D006B /* ProposalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002132FC25E85F28002D006B /* ProposalsViewController.swift */; };
 		0021330025E85F28002D006B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002132FE25E85F28002D006B /* Main.storyboard */; };
 		0021330225E85F29002D006B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0021330125E85F29002D006B /* Assets.xcassets */; };
 		0021330525E85F29002D006B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0021330325E85F29002D006B /* LaunchScreen.storyboard */; };
@@ -18,6 +18,16 @@
 		0021331E25E85FED002D006B /* mn-vpn.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0021331525E85FED002D006B /* mn-vpn.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0021333A25E86B5F002D006B /* VPNConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021333925E86B5F002D006B /* VPNConfig.swift */; };
 		0021333F25E86D3E002D006B /* VPNConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021333925E86B5F002D006B /* VPNConfig.swift */; };
+		0027AD3725EAA19E00323108 /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027AD3625EAA19E00323108 /* Proposal.swift */; };
+		00A22CCB25EAA626001D2AD7 /* ProposalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A22CCA25EAA626001D2AD7 /* ProposalTableViewCell.swift */; };
+		00A22CCF25EAAE6B001D2AD7 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A22CCE25EAAE6B001D2AD7 /* Identity.swift */; };
+		00A22CD825EAC5C4001D2AD7 /* VpnService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A22CD725EAC5C3001D2AD7 /* VpnService.swift */; };
+		00A22CDE25EACC82001D2AD7 /* NetworkSettingsBuilderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A22CDD25EACC82001D2AD7 /* NetworkSettingsBuilderBuilder.swift */; };
+		00A22CE225EB01F7001D2AD7 /* WireguardTunnelSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A22CE125EB01F7001D2AD7 /* WireguardTunnelSetup.swift */; };
+		00A22CE725EB0419001D2AD7 /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027AD3625EAA19E00323108 /* Proposal.swift */; };
+		00A22CEC25EB0549001D2AD7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A22CEB25EB0549001D2AD7 /* Node.swift */; };
+		00A22CEF25EB0636001D2AD7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A22CEB25EB0549001D2AD7 /* Node.swift */; };
+		00A22CF225EB063D001D2AD7 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A22CCE25EAAE6B001D2AD7 /* Identity.swift */; };
 		796D244025E9319400DAE824 /* Mysterium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796D243F25E9319400DAE824 /* Mysterium.framework */; };
 		796D244325E9319E00DAE824 /* Mysterium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796D243F25E9319400DAE824 /* Mysterium.framework */; };
 /* End PBXBuildFile section */
@@ -49,7 +59,7 @@
 /* Begin PBXFileReference section */
 		002132F525E85F28002D006B /* mn-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mn-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		002132F825E85F28002D006B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		002132FC25E85F28002D006B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		002132FC25E85F28002D006B /* ProposalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalsViewController.swift; sourceTree = "<group>"; };
 		002132FF25E85F28002D006B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0021330125E85F29002D006B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0021330425E85F29002D006B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +71,13 @@
 		0021331A25E85FED002D006B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0021331B25E85FED002D006B /* mn_vpn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mn_vpn.entitlements; sourceTree = "<group>"; };
 		0021333925E86B5F002D006B /* VPNConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNConfig.swift; sourceTree = "<group>"; };
+		0027AD3625EAA19E00323108 /* Proposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposal.swift; sourceTree = "<group>"; };
+		00A22CCA25EAA626001D2AD7 /* ProposalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalTableViewCell.swift; sourceTree = "<group>"; };
+		00A22CCE25EAAE6B001D2AD7 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		00A22CD725EAC5C3001D2AD7 /* VpnService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpnService.swift; sourceTree = "<group>"; };
+		00A22CDD25EACC82001D2AD7 /* NetworkSettingsBuilderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettingsBuilderBuilder.swift; sourceTree = "<group>"; };
+		00A22CE125EB01F7001D2AD7 /* WireguardTunnelSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireguardTunnelSetup.swift; sourceTree = "<group>"; };
+		00A22CEB25EB0549001D2AD7 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		796D243F25E9319400DAE824 /* Mysterium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mysterium.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,10 +125,11 @@
 		002132F725E85F28002D006B /* mn-poc */ = {
 			isa = PBXGroup;
 			children = (
+				00A22CEA25EB0533001D2AD7 /* Common */,
+				0027AD3125EAA15B00323108 /* View */,
+				0027AD2E25EAA14A00323108 /* Model */,
 				0021330D25E85F36002D006B /* mn-poc.entitlements */,
 				002132F825E85F28002D006B /* AppDelegate.swift */,
-				002132FC25E85F28002D006B /* ViewController.swift */,
-				0021333925E86B5F002D006B /* VPNConfig.swift */,
 				002132FE25E85F28002D006B /* Main.storyboard */,
 				0021330125E85F29002D006B /* Assets.xcassets */,
 				0021330325E85F29002D006B /* LaunchScreen.storyboard */,
@@ -132,11 +150,49 @@
 		0021331725E85FED002D006B /* mn-vpn */ = {
 			isa = PBXGroup;
 			children = (
+				00A22CD725EAC5C3001D2AD7 /* VpnService.swift */,
+				00A22CDD25EACC82001D2AD7 /* NetworkSettingsBuilderBuilder.swift */,
+				00A22CE125EB01F7001D2AD7 /* WireguardTunnelSetup.swift */,
 				0021331825E85FED002D006B /* PacketTunnelProvider.swift */,
 				0021331A25E85FED002D006B /* Info.plist */,
 				0021331B25E85FED002D006B /* mn_vpn.entitlements */,
 			);
 			path = "mn-vpn";
+			sourceTree = "<group>";
+		};
+		0027AD2E25EAA14A00323108 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0021333925E86B5F002D006B /* VPNConfig.swift */,
+				0027AD3625EAA19E00323108 /* Proposal.swift */,
+				00A22CCE25EAAE6B001D2AD7 /* Identity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0027AD3125EAA15B00323108 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0027AD3F25EAA3DF00323108 /* Proposals */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0027AD3F25EAA3DF00323108 /* Proposals */ = {
+			isa = PBXGroup;
+			children = (
+				002132FC25E85F28002D006B /* ProposalsViewController.swift */,
+				00A22CCA25EAA626001D2AD7 /* ProposalTableViewCell.swift */,
+			);
+			path = Proposals;
+			sourceTree = "<group>";
+		};
+		00A22CEA25EB0533001D2AD7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				00A22CEB25EB0549001D2AD7 /* Node.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				002132FD25E85F28002D006B /* ViewController.swift in Sources */,
+				002132FD25E85F28002D006B /* ProposalsViewController.swift in Sources */,
+				00A22CCF25EAAE6B001D2AD7 /* Identity.swift in Sources */,
+				0027AD3725EAA19E00323108 /* Proposal.swift in Sources */,
+				00A22CCB25EAA626001D2AD7 /* ProposalTableViewCell.swift in Sources */,
 				0021333A25E86B5F002D006B /* VPNConfig.swift in Sources */,
 				002132F925E85F28002D006B /* AppDelegate.swift in Sources */,
+				00A22CEC25EB0549001D2AD7 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A22CE225EB01F7001D2AD7 /* WireguardTunnelSetup.swift in Sources */,
+				00A22CD825EAC5C4001D2AD7 /* VpnService.swift in Sources */,
 				0021333F25E86D3E002D006B /* VPNConfig.swift in Sources */,
+				00A22CF225EB063D001D2AD7 /* Identity.swift in Sources */,
+				00A22CDE25EACC82001D2AD7 /* NetworkSettingsBuilderBuilder.swift in Sources */,
 				0021331925E85FED002D006B /* PacketTunnelProvider.swift in Sources */,
+				00A22CE725EB0419001D2AD7 /* Proposal.swift in Sources */,
+				00A22CEF25EB0636001D2AD7 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
